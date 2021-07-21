@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ham(a){
+        if(a==1) {
+            return a;
+    }else{
+        return a*ham(a-1);
+        }
+    }
+
+    let giatri=ham(5);
+    alert("gia thua la " + giatri)
+
+</script>
+</body>
+</html>

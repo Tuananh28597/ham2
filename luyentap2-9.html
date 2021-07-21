@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let mang1 = [];
+    function ham() {
+        for (let i = 0; i < 5; i++) {
+            let a = prompt("nhap ki tu");
+            mang1.push(a);
+        }
+    }
+    function timkitu() {
+        ham()
+        let count = 0;
+        let b = prompt("nhap ki tu can tim")
+        for (let i = 0; i < mang1.length; i++) {
+            if (mang1[i]==b) {
+                count++
+            }
+        }
+        return count;
+    }
+    function check(count){
+        if(count!==0){
+            alert(count)
+        }else{
+            alert("-1");
+        }
+    }
+    let dem = timkitu()
+    check(dem)
+
+</script>
+</body>
+</html>
